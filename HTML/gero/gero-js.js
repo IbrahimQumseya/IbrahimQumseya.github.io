@@ -1,7 +1,8 @@
 window.addEventListener("deviceorientation", on_rotate_uab);
 
 function on_rotate_uab(e){
-	documentElement.getElementById("id_alpha").innerHTML = e.alpha;
-	documentElement.getElementById("id_beta").innerHTML = e.beta;
-	documentElement.getElementById("id_gamma").innerHTML = e.gamma;
+	document.getElementById("id_alpha").innerHTML = e.alpha;
+	document.getElementById("id_beta").innerHTML = e.beta;
+	document.getElementById("id_gamma").innerHTML = e.gamma;
+	
 }
