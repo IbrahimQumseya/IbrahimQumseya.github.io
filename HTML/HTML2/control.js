@@ -2,15 +2,16 @@ class t_eq2_controller{
 	view;
 	model;
 	constructor(view,model){
-		this.model = model;
 		this.view = view;
+		this.model = model;
+		
 		
 		
 		// crem o lista de functii
 		var events_list = new t_events();
 		
 		// adaugam la lista pe on_solve
-		events_list.add_event_uab("on_solve_click",this.on_solve);
+		events_list.add_event_uab("on_solve_click",this.on_solve.bind(this));
 		
 		// trimitem la view lista de functii
 		this.view.set_events(events_list);

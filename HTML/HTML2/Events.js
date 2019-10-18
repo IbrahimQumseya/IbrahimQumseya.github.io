@@ -16,7 +16,7 @@ class t_events{ // t_list_of_events_and_functions
 				
 			}
 		}
-		this.events[event_name].push(listener);
+		this.eventss[event_name].push(listener);
 	}
 	call_event_uab(event_name,params){
 		this.eventss[event_name].forEach(i => i(params));
