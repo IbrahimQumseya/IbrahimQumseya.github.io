@@ -9,7 +9,7 @@ function desenare(beta,gamma)
 	
 	context.clearRect(0,0,canvas.width,canvas.height);
 	
-	context.bigenPath();
+	context.beginPath();
 	var r = 10;
 	var x = canvas.width / 2 + beta / 90 * (canvas.width / 2 - r) ;
 	var y = canvas.width / 2 + gamma / 90 * (canvas.height / 2 - r) ;;
