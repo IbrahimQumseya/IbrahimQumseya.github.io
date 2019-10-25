@@ -1,4 +1,4 @@
-document.getElementById("id_logic_verstion").innerHTML = "Logic version = 2019.10.25.0"
+document.getElementById("id_logic_verstion").innerHTML = "Logic version = 2019.10.25.0";
 window.addEventListener("deviceorientation", on_orientation_uab);
 window.addEventListener("devicemotion", on_motion_uab);
 
