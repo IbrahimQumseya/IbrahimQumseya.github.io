@@ -8,7 +8,7 @@ function start()
 }
 
 function on_ok_geo_uab(e){
-	document.getElementById("geo-location").innerHTML = e.latitude +" "+e.coords+" "+ e.longtitude + " " e.coords.accuracy;
+	document.getElementById("geo-location").innerHTML = e.latitude +" "+e.coords+" "+ e.longtitude + " "+ e.coords.accuracy;
 	
 }
 
