@@ -33,6 +33,8 @@ function start()
 		muncitor.onmessage = function (e){
 			document.getElementById("id_prime").innerHTML = e.data;
 		}
+		
+		muncitor.postMessage("start");
 	}else{
 		muncitor.postMessage("start");
 		
