@@ -25,6 +25,7 @@ function is_prim(n){
 function start_cal(start_numar){
 	
 	if (ruleaza == false)
+	{}
 		else
 		{
 			for (var i = start_numar;i<start_numar + 100;i++)
