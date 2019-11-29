@@ -1,7 +1,7 @@
-document.getElementByID("id_logic").innerHTML = "2019.11.29.0";
+document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.0";
 window.addEventListener("touchstart",touch_start_uab);
 
-var canvas = document.getElementByID("id_canvas");
+var canvas = document.getElementById("id_canvas");
 var context = canvas.getContext("2d");
 
 function touch_start_uab(e)
