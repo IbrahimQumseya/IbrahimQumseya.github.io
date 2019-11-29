@@ -25,6 +25,7 @@ function get_randomColor()
 
 function touch_start_uab(e)
 {
+	e.preventDefault();
 	var t = e.changeTouches;
 	for (var i =0;i<t.length;i++)
 	{
@@ -47,6 +48,7 @@ function touch_start_uab(e)
 }
 
 function touch_move_uab(e){
+	e.preventDefault();
 		var t = e.changeTouches;
 	for (var i =0;i<t.length;i++)
 	{
@@ -68,6 +70,8 @@ function touch_move_uab(e){
 		context.fillStyle = last_touch[touchIndex].color;
 		context.fill();
 		context.stroke();
+		last_touch[touchIndex].x =t[i].x;
+		last_touch[touchIndex].y =t[i].y;
 	}
 	
 	
