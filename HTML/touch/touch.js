@@ -1,10 +1,12 @@
-document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.3";
+document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.4";
 window.addEventListener("touchstart",touch_start_uab);
+window.addEventListener("touchmove",touch_move_uab);
 
 var canvas = document.getElementById("id_canvas");
 var context = canvas.getContext("2d");
 
 var client_rect = canvas.getBoundingClientRact();
+var last_touch = [];
 
 function get_randomColor()
 {
@@ -18,6 +20,9 @@ function get_randomColor()
 	return culoare;
 	
 }
+
+
+
 function touch_start_uab(e)
 {
 	var t = e.changeTouches;
@@ -30,5 +35,43 @@ function touch_start_uab(e)
 		context.fill();
 		context.stroke();
 		
+		var touchInfo = {};
+		touchInfo.x = t[i].pageX;
+		touchInfo.y = t[i].pageY;
+		touchInfo.color =context.fillStyle;
+		touchInfo.id =t[i].identifier;
+		
+		last_touch.push(touchInfo);
+		
 	}
+}
+
+function touch_move_uab(e){
+		var t = e.changeTouches;
+	for (var i =0;i<t.length;i++)
+	{
+		var touchIndex = -1;
+		for (var j=0;j<last_touch.length; j++)
+		{
+			if (t[i].identifier == last_touch[j].identifier)
+			{
+				touchIndex =j;
+				break;
+				
+			}
+		}
+		context.beginPath();
+		context.moveTo(last_touch[touchIndex].x - client_rect.left,last_touch[touchIndex].y - client_rect.top);
+		context.lineTo(t[i].pageX - client_rect.left,t[i].pageY - client_rect.top);
+		context.lineWidth = 20;
+		context.strokeStyle = last_touch[touchIndex].color;
+		context.fillStyle = last_touch[touchIndex].color;
+		context.fill();
+		context.stroke();
+	}
+	
+	
+	
+	
+	
 }
