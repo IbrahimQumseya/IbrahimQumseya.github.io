@@ -1,6 +1,7 @@
-document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.5";
+document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.6";
 window.addEventListener("touchstart",touch_start_uab);
 window.addEventListener("touchmove",touch_move_uab);
+window.addEventListener("touchend",touch_end_uab);
 
 var canvas = document.getElementById("id_canvas");
 var context = canvas.getContext("2d");
@@ -48,8 +49,8 @@ function touch_start_uab(e)
 }
 
 function touch_move_uab(e){
-	e.preventDefault();
-		var t = e.changeTouches;
+		e.preventDefault();
+	var t = e.changeTouches;
 	for (var i =0;i<t.length;i++)
 	{
 		var touchIndex = -1;
@@ -70,12 +71,30 @@ function touch_move_uab(e){
 		context.fillStyle = last_touch[touchIndex].color;
 		context.fill();
 		context.stroke();
-		last_touch[touchIndex].x =t[i].x;
-		last_touch[touchIndex].y =t[i].y;
 	}
 	
 	
 	
 	
 	
+}
+
+function touch_end_uab(e)
+{	
+	e.preventDefault();
+	var t = e.changeTouches;
+	for (var i =0;i<t.length;i++)
+	{
+		var touchIndex = -1;
+		for (var j=0;j<last_touch.length; j++)
+		{
+			if (t[i].identifier == last_touch[j].id)
+			{
+				touchIndex =j;
+				break;
+				
+			}
+		}
+		last_touch.splice(touchIndex,1);
+	}
 }
