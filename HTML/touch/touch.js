@@ -1,0 +1,17 @@
+document.getElementByID("id_logic").innerHTML = "2019.11.29.0";
+window.addEventListener("touchstart",touch_start_uab);
+
+var canvas = document.getElementByID("id_canvas");
+var context = canvas.getContext("2d");
+
+function touch_start_uab(e)
+{
+	var t = e.changeTouches;
+	for (var i =0;i<t.length;i++)
+	{
+		context.beginPath();
+		context.arc(t[i].pageX,t[i].pageY,10,0,2*Math.PI);
+		context.stroke();
+		
+	}
+}
