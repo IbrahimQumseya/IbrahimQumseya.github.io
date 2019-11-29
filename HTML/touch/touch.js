@@ -1,11 +1,11 @@
-document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.4";
+document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.5";
 window.addEventListener("touchstart",touch_start_uab);
 window.addEventListener("touchmove",touch_move_uab);
 
 var canvas = document.getElementById("id_canvas");
 var context = canvas.getContext("2d");
 
-var client_rect = canvas.getBoundingClientRact();
+var client_rect = canvas.getBoundingClientRect();
 var last_touch = [];
 
 function get_randomColor()
@@ -53,7 +53,7 @@ function touch_move_uab(e){
 		var touchIndex = -1;
 		for (var j=0;j<last_touch.length; j++)
 		{
-			if (t[i].identifier == last_touch[j].identifier)
+			if (t[i].identifier == last_touch[j].id)
 			{
 				touchIndex =j;
 				break;
