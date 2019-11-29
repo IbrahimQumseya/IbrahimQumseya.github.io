@@ -1,4 +1,4 @@
-document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.6";
+document.getElementById("id_logic").innerHTML ="Logic version = 2019.11.29.7";
 window.addEventListener("touchstart",touch_start_uab);
 window.addEventListener("touchmove",touch_move_uab);
 window.addEventListener("touchend",touch_end_uab);
@@ -71,6 +71,9 @@ function touch_move_uab(e){
 		context.fillStyle = last_touch[touchIndex].color;
 		context.fill();
 		context.stroke();
+		
+		last_touch[touchIndex].x = t[i].pageX;
+		last_touch[touchIndex].y = t[i].pageY;
 	}
 	
 	
