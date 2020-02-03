@@ -6,4 +6,4 @@ DESCRIERE :
 
 TEHNOLOGII FOLOSITE: C# , ASP.NET
 
-![Image of project](https://octodex.github.com/images/yaktocat.png)
+![Image of project](https://github.com/IbrahimQumseya/IbrahimQumseya.github.io/blob/master/HTML/Proiect/img/proiect.jpg)
