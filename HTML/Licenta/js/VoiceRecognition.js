@@ -11,7 +11,7 @@ var recognition = new SpeechRecognition();
 recognition.continuous = false;
 recognition.lang = 'en-US';
 
-document.body.onclick = function () {
+ btn.addEventListener('click', function() {
     recognition.start();
     console.log('Ready to receive.');
 }
