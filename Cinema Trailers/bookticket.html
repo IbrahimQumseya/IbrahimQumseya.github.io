@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Book Ticket</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /><!-- Link to style.css -->
+<link href="showYtVideo.css" rel="stylesheet" type="text/css"><!-- Link to showYtVideo.css -->
+<link rel="stylesheet" href="css/style2.css" type="text/css" media="all" />
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="jquery.showYtVideo.js"></script>
+
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div id="shell">
+<header>
+  <div id="header">
+    <h1 id="logo"><a href="index.html">WatchTrailer</a></h1>
+    <div class="navigation">
+	<tr>
+			<td><a href="login.html"><img src="css/menu/logintop.png" alt="login"></a>
+			</td>
+			<td><a href="registration.html"><img src="css/menu/regestration.png" alt="regestration"></a>
+			</td>
+	</tr>	
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="inthreater.html">IN THEATERS</a></li>
+        <li><a href="comingsoon.html">COMING SOON</a></li>
+        <li><a href="bookticket.html">BOOK TICKET</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+   </div>
+   </header>
+</div>	
+<section>
+<header><h6>.</h6></header>
+<div class="l1">
+<form id="form" action="#" method="post">	
+			<fieldset>
+				<legend>QFX,TICKET BOOKING SYSTEM</legend>	<br><br>			
+				<label> Your Name: 	</label>
+					<input id="name1" type="text" name="username">			
+			<br><br>
+				<label> Surname : </label>
+					<input id="name2" type="text" name="username">			
+					<br><br>
+				<label> Location : </label>
+					<input id="address" type="text" name="address">			
+				<br><br>
+				<label> Contact : </label>
+					<input id="phone" type="number" name="Phone">			
+				<br><br>
+			<label> Email Address : </label>
+					<input id="email" type="text" name="email">			
+				<br><br>
+				<label for="ex">Movie : </label>
+					<select id="ex" name="level" >
+					<option value="">Select a Movie</option>
+					<option value="fate8">POC</option>
+					<option value="fist5">Fist Five</option>
+					<option value="logan">Guardians of galaxy 2</option>
+					<option value="ww">Wonder Woman</option>
+					<option value="cars3">Cars 3</option>
+					<option value="mummy">Mummy</option>
+					</select>
+				<label for="ext">Seat: </label>
+					<select id="ext" name="level" >
+					<option value="">Select a Quantity</option>
+					<option value="1">Cabin</option>
+					<option value="2">Balcony</option>
+					<option value="3">Deluxe</option>
+					<option value="4">Special</option>
+					<option value="5">Drescal</option>
+					
+					</select>
+					<label for="exti">Show Time: </label>
+					<select id="exti" name="level" >
+					<option value="">Select a Time</option>
+					<option value="1">8:00AM</option>
+					<option value="2">12:00PM</option>
+					<option value="3">3:00PM</option>
+					<option value="4">6:00PM</option>
+					<option value="5">9:00PM</option>
+					
+					</select>
+					<br><br>
+				<p>Payment:
+<label>
+<input id="radio1" type="radio" name="payment" value="yes"/> Esewa
+</label>
+<label>
+<input id="radio" type="radio" name="payment" value="noo"/> Cash on Book
+</label><br>
+</p>
+<br>
+			<label> Amount : 
+					<output id="amount" type="number" name="amount">			
+				</label><br>
+				<input type="submit" value="Book Now" />
+				<br />
+				<p id="errorMessage" class="error">					
+				</p>	
+			</fieldset>			
+		</form>
+		<p id="successMessage" class="success">					
+		</p>
+</div>
+</section>
+
+<footer>
+  <div id="footer"><!-- div for footer -->
+
+		<table id="table"><!-- table for link to social medias -->
+			<tr>
+				<td>
+				
+				<a href="http://www.facebook.com"><img src="css/socialicons/facebook.png" alt="FaceBook" height="30" width="30"></a>
+				<a href="http://www.twitter.com"><img src="css/socialicons/twitter.png" alt="Twitter" height="30" width="30"></a>
+				<a href="http://www.youtube.com"><img src="css/socialicons/youtube.png" alt="Youtube" height="30" width="30"></a>
+				<a href="http://www.instagram.com"><img src="css/socialicons/instagram.png" alt="Instagram" height="30" width="30"></a>
+				<p>Copy Right &copy; Protected</p>
+				</td>
+			</tr>
+		</table>
+  
+    <p>  <a href="#"></a>All Rights Reserved</p>
+    <div style="clear:both;"></div>
+	</div>
+	
+  </footer>
+
+<script src="js/bookticket.js"></script>
+<!-- END PAGE SOURCE -->
+</body>
+</html>

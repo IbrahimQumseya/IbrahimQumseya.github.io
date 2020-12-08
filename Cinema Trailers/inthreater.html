@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WatchTrailer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /><!-- link to style.css -->
+<link href="showYtVideo.css" rel="stylesheet" type="text/css"><!-- link to showYtVideo.css -->
+
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div id="shell">
+
+<header>
+  <div id="header">
+    <h1 id="logo"><a href="index.html">WatchTrailer</a></h1>
+   <nav> <div class="navigation">
+   	<tr>
+	<tr>
+			<td><a href="login.html"><img src="css/menu/logintop.png" alt="login"></a>
+			</td>
+			<td><a href="registration.html"><img src="css/menu/regestration.png" alt="regestration"></a>
+			</td>
+	</tr>	
+      <ul>
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="inthreater.html">IN THEATERS</a></li>
+        <li><a href="comingsoon.html">COMING SOON</a></li>
+        <li><a href="bookticket.html">BOOK TICKET</a></li>
+		 <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div></nav>
+</div>
+</header>	
+<section>
+	<header>
+	<h6>.</h6>
+	</header>
+<br><br>
+<div class="slideshow-container">
+<br><br>
+<div class="mySlidesfade1">
+  <img src="css/images/poc1.jpg" alt="pic1" class="imgss"  >
+  <div class="text">
+				<ul class="textmargin">
+                            <li>Movie name : pirates of the caribbean dead men tell no tales</li>
+                            <li>Director : Joachim Rønning</li>
+                            <li>Genere : Fantasy/Action movie</li>
+							<li>Movie Venue: QFX,Trademall</li>
+							<li>Time :12:00-3:00 <script></script></li>
+                           <li><a href="bookticket.html">BOOK TICKET</a></li><!-- link to book ticket page -->
+				</ul>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="css/images/GOG.jpg"  alt="pic2" class="imgss" >
+  <div class="text">
+				<ul class="textmargin" >
+                            <li>Movie name : Galaxy Of the Gaurdians vol.2</li>
+                            <li>Director : Sudeep Tiwari</li>
+                            <li>Genere : Hollywood Action sci-fi movie</li>
+							<li>Movie Venue: QFX,Trademall</li>
+							<li>Time :12:00-3:00 <script></script></li>
+                            <li><a href="bookticket.html">BOOK TICKET</a></li><!-- link to book ticket page -->
+				</ul>
+				
+</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="css/images/TM.jpg"  alt="pic3" class="imgss" >
+  <div class="text">
+						<ul class="textmargin" >
+                            <li>Movie name : The Mummy</li>
+                            <li>Director : 	James Gunn</li>
+                            <li>Genere : 3D Horror Movie</li>
+							<li>Movie Venue: QFX,Trademall</li>
+							<li>Time:4:00-7:00<script></script></li>
+                           <li><a href="bookticket.html">BOOK TICKET</a></li><!-- link to book ticket page -->
+						</ul>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="css/images/WM.jpg" alt="pic3" class="imgss" >
+  <div class="text">
+  				<ul class="textmargin" >
+                            <li>Movie name : Wonder Women</li>
+                            <li>Director : Patty Jenkins</li>
+                            <li>Genere : Marvel's Action Movie</li>
+							<li>Movie Venue: QFX,Trademall</li>
+							<li>Time :3:00-6:00<script></script></li>
+							<li><a href="bookticket.html">BOOK TICKET</a></li><!-- link to book ticket page -->
+				</ul>
+  </div>
+</div>
+
+</div>
+<br>
+</section>
+
+<footer>
+  <div id="footer"><!-- div for footer -->
+
+		<table id="table"><!-- table for link to social medias -->
+			<tr>
+				<td>
+				
+				<a href="http://www.facebook.com"><img src="css/socialicons/facebook.png" alt="FaceBook" height="30" width="30"></a>
+				<a href="http://www.twitter.com"><img src="css/socialicons/twitter.png" alt="Twitter" height="30" width="30"></a>
+				<a href="http://www.youtube.com"><img src="css/socialicons/youtube.png" alt="Youtube" height="30" width="30"></a>
+				<a href="http://www.instagram.com"><img src="css/socialicons/instagram.png" alt="Instagram" height="30" width="30"></a>
+				<p>Copy Right &copy; Protected</p>
+				</td>
+			</tr>
+		</table>
+  
+    <p>  <a href="#"></a>All Rights Reserved</p>
+    <div style="clear:both;"></div>
+	</div>
+	
+  </footer>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.showYtVideo.js"></script>
+<script>
+
+ jQuery(document).ready(function ($) {
+            $('.show-video').on('click', function () {
+			     var id = this.id;
+
+                $.showYtVideo({
+                    videoId: id
+                });
+            });
+        });
+</script>
+
+<!-- END PAGE SOURCE -->
+</body>
+</html>
