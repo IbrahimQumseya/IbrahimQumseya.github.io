@@ -1,8 +1,17 @@
-# Aplicatii diverse
+# Ibrahim Qumseya — Portfolio (Angular)
 
-## Aplicatii IOS
+Personal portfolio site built with **Angular** — project showcase, responsive layout, and contact links.
 
-## Aplicatii HTML 5
+🔗 **Live:** [ibrahimqumseya.github.io](https://ibrahimqumseya.github.io/)
 
-### Aplicatii Android
+## Stack
 
+- Angular
+- TypeScript
+- SCSS
+
+## Related
+
+- [Profile README](https://github.com/IbrahimQumseya/IbrahimQumseya)
+- [Case studies](https://github.com/IbrahimQumseya/portfolio-case-studies)
+- [Book Library API](https://github.com/IbrahimQumseya/book-library-api)
